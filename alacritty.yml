@@ -1,0 +1,61 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator
+
+window:
+# Specified in number of columns/lines, not pixels. If both are zero this
+  dimensions:
+    columns: 187
+    lines: 48
+
+# Window padding (changes require restart)
+  #
+  # Blank space added around the window in pixels. This padding is not scaled by
+  # DPI and the specified value is always added at both opposing sides.
+  padding:
+    x: 7
+    y: 7
+
+import:
+ - ~/.config/alacritty/themes/themes/gruvbox_dark.yaml
+
+# Font configuration (changes require restart)
+font:
+  # Style can be specified to pick a specific face.
+  normal:
+    family: Hack Nerd Font
+    style: Regular
+
+  # The bold font face
+  bold:
+    family: Hack Nerd Font
+    style: Medium
+
+  # The italic font face
+  italic:
+    family: Hack Nerd Font
+    style: Light
+
+  # Point size of the font
+  size: 8.5
+
+
+scrolling:
+  # maximum number of lines in the scrollback buffer. Specifying '0' will
+  # disable scrolling.
+  history: 100000
+
+  # Number of lines the viewport will move for every line scrolled when
+  # scrollback is enabled (history > 0).
+  multiplier: 5
+
+
+mouse:
+  # Click settings
+  #
+  # The `double_click` and `triple_click` settings control the time
+  # alacritty should wait for accepting multiple clicks as one double
+  # or triple click.
+  double_click: { threshold: 300 }
+  triple_click: { threshold: 300 }
+
+  # If this is `true`, the cursor is temporarily hidden when typing.
+  hide_when_typing: true
